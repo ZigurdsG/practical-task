@@ -22,6 +22,8 @@ import UnstyledLink from '@/components/links/UnstyledLink';
 import NextImage from '@/components/NextImage';
 import Skeleton from '@/components/Skeleton';
 
+import { colorList } from '@/constant/config';
+
 type Color = (typeof colorList)[number];
 
 export default function ComponentPage() {
@@ -71,6 +73,7 @@ export default function ComponentPage() {
                   name='color'
                   id='color'
                   value={color}
+                  title='Color'
                   className={clsx(
                     'block max-w-xs rounded',
                     mode === 'dark'
@@ -434,28 +437,3 @@ export default function ComponentPage() {
     </main>
   );
 }
-
-const colorList = [
-  'slate',
-  'gray',
-  'zinc',
-  'neutral',
-  'stone',
-  'red',
-  'orange',
-  'amber',
-  'yellow',
-  'lime',
-  'green',
-  'emerald',
-  'teal',
-  'cyan',
-  'sky',
-  'blue',
-  'indigo',
-  'violet',
-  'purple',
-  'fuchsia',
-  'pink',
-  'rose',
-] as const;

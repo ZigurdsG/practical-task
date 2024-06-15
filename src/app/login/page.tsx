@@ -2,7 +2,7 @@
 
 import '@/lib/env';
 
-import UserForm from '@/components/form/Regisration';
+import LoginForm from '@/components/form/Login';
 import ArrowLink from '@/components/links/ArrowLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 
@@ -16,7 +16,7 @@ export default function HomePage() {
       </header>
 
       <section className='layout text-black'>
-        <UserForm />
+        <LoginForm />
       </section>
 
       <footer className='layout py-4 text-center'>
